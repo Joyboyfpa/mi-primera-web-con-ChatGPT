@@ -169,3 +169,10 @@ footer ul li a {
 footer ul li a:hover {
     color: #007bff;
 }
+
+/* Estilos de las imágenes de redes sociales en el pie de página */
+footer img {
+    max-width: 50px; /* Ancho máximo de las imágenes de redes sociales */
+    height: auto;
+    margin: 0 10px; /* Espacio entre las imágenes */
+}
