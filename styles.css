@@ -47,7 +47,7 @@ p {
 img {
     max-width: 30em;
     height: auto;
-    border-radius: 20px;
+    border-radius: 50px;
     margin: 10px; /* Espacio entre las imágenes */
 }
 

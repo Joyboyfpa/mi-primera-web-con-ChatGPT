@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +8,88 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
-<header>
-    <h1 id="menuTitle">Blog de Bienestar y Salud Mental</h1>
-    <nav id="navMenu">
+    <header>
+        <h1 id="menuTitle">Blog de Bienestar y Salud Mental</h1>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#articles">Nuestros Artículos</a></li>
+                <li><a href="#resources">Recursos Gratuitos</a></li>
+                <li><a href="#community">Únete a Nuestra Comunidad</a></li>
+                <li><a href="#commitment">Nuestro Compromiso</a></li>
+                <li><a href="#subscribe">Suscríbete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo de profesionales dedicados a promover el bienestar emocional y la salud mental. En
+                nuestro blog, encontrarás artículos informativos, consejos prácticos y recursos útiles para ayudarte a
+                mejorar tu calidad de vida y alcanzar un estado de bienestar óptimo.</p>
+            <img src="images/about.jpg" alt="Sobre Nosotros">
+        </section>
+
+        <section id="articles">
+            <h2>Nuestros Artículos</h2>
+            <p>Explora nuestra amplia variedad de artículos sobre temas relacionados con el bienestar y la salud mental.
+                Desde técnicas de manejo del estrés hasta consejos para mejorar la autoestima, estamos aquí para guiarte
+                en tu viaje hacia una vida más feliz y plena.</p>
+            <img src="images/articles.jpg" alt="Nuestros Artículos">
+        </section>
+
+        <section id="resources">
+            <h2>Recursos Gratuitos</h2>
+            <p>Descarga nuestros recursos gratuitos, como guías de meditación, libros electrónicos sobre mindfulness y
+                hojas de trabajo para el desarrollo personal. Estamos comprometidos a proporcionarte herramientas
+                prácticas que puedan ayudarte a cultivar una mentalidad positiva y resiliente.</p>
+            <img src="images/resources.jpg" alt="Recursos Gratuitos">
+        </section>
+
+        <section id="community">
+            <h2>Únete a Nuestra Comunidad</h2>
+            <p>Conéctate con otras personas que comparten tus intereses y metas de bienestar. Únete a nuestra comunidad
+                en línea para participar en discusiones, compartir tus experiencias y recibir apoyo mutuo en tu viaje
+                hacia el bienestar emocional.</p>
+            <img src="images/community.jpg" alt="Únete a Nuestra Comunidad">
+        </section>
+
+        <section id="commitment">
+            <h2>Nuestro Compromiso</h2>
+            <p>En el Blog de Bienestar y Salud Mental, estamos comprometidos a ofrecerte contenido de alta calidad que
+                pueda inspirarte, educarte y motivarte en tu búsqueda de una vida más saludable y satisfactoria. ¡Únete
+                a nosotros en este emocionante viaje hacia el bienestar!</p>
+            <img src="images/commitment.jpg" alt="Nuestro Compromiso">
+        </section>
+
+        <section id="subscribe">
+            <h2>¡Suscríbete a Nuestro Boletín!</h2>
+            <p>No te pierdas ninguna actualización. Suscríbete a nuestro boletín para recibir las últimas noticias,
+                consejos y recursos directamente en tu bandeja de entrada. ¡Únete a nuestra comunidad de bienestar hoy
+                mismo!</p>
+            <form action="procesar_suscripcion.php" method="post">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Síguenos en redes sociales:</p>
         <ul>
-            <li><a href="#about">Sobre Nosotros</a></li>
-            <li><a href="#articles">Nuestros Artículos</a></li>
-            <li><a href="#resources">Recursos Gratuitos</a></li>
-            <li><a href="#community">Únete a Nuestra Comunidad</a></li>                <li><a href="#commitment">Nuestro Compromiso</a></li>
-             <li><a href="#subscribe">Suscríbete</a></li>
-         </ul>
-    </nav>
-</header>
-
-<main class="container">
-
-    <section id="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos un equipo de profesionales dedicados a promover el bienestar emocional y la salud mental. En nuestro blog, encontrarás artículos informativos, consejos prácticos y recursos útiles para ayudarte a mejorar tu calidad de vida y alcanzar un estado de bienestar óptimo.</p>
-        <img src="images/about.jpg" alt="Sobre Nosotros">
-    </section>
-
-    <section id="articles">
-        <h2>Nuestros Artículos</h2>
-        <p>Explora nuestra amplia variedad de artículos sobre temas relacionados con el bienestar y la salud mental. Desde técnicas de manejo del estrés hasta consejos para mejorar la autoestima, estamos aquí para guiarte en tu viaje hacia una vida más feliz y plena.</p>
-        <img src="images/articles.jpg" alt="Nuestros Artículos">
-    </section>
-
-    <section id="resources">
-        <h2>Recursos Gratuitos</h2>
-        <p>Descarga nuestros recursos gratuitos, como guías de meditación, libros electrónicos sobre mindfulness y hojas de trabajo para el desarrollo personal. Estamos comprometidos a proporcionarte herramientas prácticas que puedan ayudarte a cultivar una mentalidad positiva y resiliente.</p>
-        <img src="images/resources.jpg" alt="Recursos Gratuitos">
-    </section>
-
-    <section id="community">
-        <h2>Únete a Nuestra Comunidad</h2>
-        <p>Conéctate con otras personas que comparten tus intereses y metas de bienestar. Únete a nuestra comunidad en línea para participar en discusiones, compartir tus experiencias y recibir apoyo mutuo en tu viaje hacia el bienestar emocional.</p>
-        <img src="images/community.jpg" alt="Únete a Nuestra Comunidad">
-    </section>
-
-    <section id="commitment">
-        <h2>Nuestro Compromiso</h2>
-        <p>En el Blog de Bienestar y Salud Mental, estamos comprometidos a ofrecerte contenido de alta calidad que pueda inspirarte, educarte y motivarte en tu búsqueda de una vida más saludable y satisfactoria. ¡Únete a nosotros en este emocionante viaje hacia el bienestar!</p>
-        <img src="images/commitment.jpg" alt="Nuestro Compromiso">
-    </section>
-
-    <section id="subscribe">
-        <h2>¡Suscríbete a Nuestro Boletín!</h2>
-        <p>No te pierdas ninguna actualización. Suscríbete a nuestro boletín para recibir las últimas noticias, consejos y recursos directamente en tu bandeja de entrada. ¡Únete a nuestra comunidad de bienestar hoy mismo!</p>
-        <form action="procesar_suscripcion.php" method="post">
-            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <button type="submit">Suscribirse</button>
-        </form>
-    </section>
-
-</main>
-
-<footer>
-    <p>Síguenos en redes sociales:</p>
-    <ul>
-        <li><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a></li>
-        <li><a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a></li>
-        <li><a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a></li>
-    </ul>
-    <p>Derechos de autor © 2024 Blog de Bienestar y Salud Mental. Todos los derechos reservados.</p>
-</footer>
+            <li><a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a></li>
+        </ul>
+        <p>Derechos de autor © 2024 Blog de Bienestar y Salud Mental. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
+
 </html>
