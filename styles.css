@@ -36,6 +36,7 @@ header, footer, section {
 
 h1, h2 {
     color: #333;
+    text-align: center; /* Alinea el texto al centro */
 }
 
 p {
@@ -44,11 +45,10 @@ p {
 }
 
 img {
-    max-width: 100%;
+    max-width: 30em;
     height: auto;
-    max-width: 300px; /* Ancho máximo de las imágenes */
     border-radius: 20px;
-    margin: 20px 0; /* Espacio entre las imágenes */
+    margin: 10px; /* Espacio entre las imágenes */
 }
 
 /* Estilos del encabezado */
@@ -170,9 +170,48 @@ footer ul li a:hover {
     color: #007bff;
 }
 
-/* Estilos de las imágenes de redes sociales en el pie de página */
+/* Estilos del menú desplegable */
+#navMenu {
+    display: none;
+}
+
+#navMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navMenu ul li {
+    margin: 0;
+}
+
+#navMenu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+#navMenu ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos del menú de navegación */
+@media only screen and (min-width: 768px) {
+    #menuTitle {
+        display: block; /* Asegura que el título se muestre en pantallas más grandes */
+    }
+    #navMenu {
+        display: flex;
+    }
+    header {
+        justify-content: space-between;
+    }
+}
+
+/* Estilos específicos para las imágenes de redes sociales */
 footer img {
-    max-width: 50px; /* Ancho máximo de las imágenes de redes sociales */
-    height: auto;
-    margin: 0 10px; /* Espacio entre las imágenes */
+    max-width: 50px; /* Reducir el tamaño de las imágenes de redes sociales */
 }
